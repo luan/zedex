@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.0.0'
+
 gem 'rails', '4.0.0.beta1'
 
 gem 'pg'
@@ -11,6 +13,10 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+group :development do
+  gem 'heroku_san'
+end
 
 group :development, :test do
   gem 'rspec-rails'
