@@ -1,0 +1,14 @@
+development:
+  adapter: postgresql
+  database: zedex_development
+  host: localhost
+
+test:
+  adapter: postgresql
+  database: zedex_test
+  host: localhost
+
+production:
+  adapter: postgresql
+  database: zedex_production
+  host: localhost
