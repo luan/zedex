@@ -22,5 +22,7 @@ module Zedex
       g.javascripts false
       g.styleshees false
     end
+
+    config.assets.initialize_on_precompile = false
   end
 end
