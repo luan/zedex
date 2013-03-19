@@ -9,11 +9,11 @@ gem 'devise', github: 'plataformatec/devise', branch: 'rails4'
 
 group :assets do
   gem 'sass-rails',   '~> 4.0.0.beta1'
-  gem 'coffee-rails', '~> 4.0.0.beta1'
   gem 'uglifier', '>= 1.0.3'
 end
 
 gem 'jquery-rails'
+gem 'ember-rails'
 
 group :development do
   gem 'heroku_san'
@@ -23,9 +23,12 @@ end
 group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'
+  gem 'poltergeist'
   gem 'pry-rails'
+  gem 'pry-meta'
   gem 'awesome_print'
   gem 'factory_girl_rails'
+  gem 'konacha'
 end
 
 group :test do

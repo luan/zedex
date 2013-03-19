@@ -5,4 +5,8 @@ Zedex::Application.routes.draw do
   }
 
   root to: "home#index"
+
+  if Rails.env.development?
+    mount Konacha::Engine => '/konacha'
+  end
 end
