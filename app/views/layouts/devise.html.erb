@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Zedex</title>
+    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body class='devise'>
+    <div class="container">
+      <% if flash.any? %>
+        <% flash.each do |type, message| %>
+          <% type = 'error' if type.to_s == 'alert' %>
+          <div class="alert alert-<%= type %>">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <%= message %>
+          </div>
+        <% end %>
+      <% end %>
+      <%= yield %>
+    </div>
+  </body>
+</html>

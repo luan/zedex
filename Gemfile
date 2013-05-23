@@ -11,10 +11,12 @@ group :assets do
   gem 'sass-rails',   '~> 4.0.0.beta1'
   gem 'uglifier', '>= 1.0.3'
   gem 'bootstrap-sass'
+  gem 'compass-rails'
 end
 
 gem 'jquery-rails'
 gem 'ember-rails'
+gem 'ember-source', '1.0.0rc3.3'
 
 group :development do
   gem 'heroku_san'
@@ -30,6 +32,7 @@ group :development, :test do
   gem 'awesome_print'
   gem 'factory_girl_rails'
   gem 'konacha'
+  gem 'konacha-chai-matchers'
 end
 
 group :test do

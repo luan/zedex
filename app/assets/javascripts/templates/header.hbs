@@ -1,0 +1,28 @@
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="brand" href="#">Zedex</a>
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+          <li class="active"><a href="#">Home</a></li>
+        </ul>
+
+        <ul class="nav pull-right">
+          {{#if currentUser}}
+            <li><a class="username">{{ currentUser.username }}</a></li>
+
+            <li><a href="/users/sign_out">Logout</a></li>
+          {{else}}
+            <li><a href="/users/sign_in">Login</a></li>
+            <li><a href="/users/sign_up">Sign Up</a></li>
+          {{/if}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

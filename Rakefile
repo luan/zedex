@@ -5,4 +5,4 @@ require File.expand_path('../config/application', __FILE__)
 
 Zedex::Application.load_tasks
 
-task default: %w(konacha:run spec)
+task default: %w(konacha:tests spec)
